@@ -18,15 +18,15 @@ class Admin(object):
 		print("*************************************")
 		print("*    开户（1）                  查询（2）             *")
 		print("*    取款（3）                  存款（4）             *")
-		print("*    改密（3）                  锁定（4）             *")
-		print("*    解锁（3）                  补卡（4）             *")
-		print("*    销户（3）                  退出（4）             *")
+		print("*    改密（5）                  锁定（6）             *")
+		print("*    解锁（7）                  补卡（8）             *")
+		print("*    销户（9）                  退出（t）             *")
 		print("*                                                   *")
 		print("*****************************************************")
 
 	def adminlogin(self):
 		adminInput = input("请输入管理员账户：")
-		if self.amin != adminInput:
+		if self.admin != adminInput:
 			print("管理员账户输入错误。。。")
 			return 0
 		passwordInput = input("请输入密码：")
